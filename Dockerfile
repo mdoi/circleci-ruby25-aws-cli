@@ -8,6 +8,7 @@ RUN sudo apt-get update && sudo apt-get install -y \
   tar \
   unzip \
   curl \
+  less \
   --no-install-recommends \
   && sudo rm -rf /var/lib/apt/lists/*
 
