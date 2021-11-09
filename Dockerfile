@@ -1,6 +1,6 @@
 FROM circleci/ruby:2.5.5
 
-RUN sudo apt-get update && sudo apt-get install -y \
+RUN sudo apt-get update --allow-releaseinfo-change && sudo apt-get install -y \
   ca-certificates \
   apt-transport-https \
   gnupg-agent \
