@@ -1,5 +1,6 @@
 FROM circleci/ruby:2.5.5
 
+RUN curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 RUN sudo apt-get update --allow-releaseinfo-change && sudo apt-get install -y \
   ca-certificates \
   apt-transport-https \
@@ -9,6 +10,7 @@ RUN sudo apt-get update --allow-releaseinfo-change && sudo apt-get install -y \
   unzip \
   curl \
   less \
+  nodejs \
   --no-install-recommends \
   && sudo rm -rf /var/lib/apt/lists/*
 
