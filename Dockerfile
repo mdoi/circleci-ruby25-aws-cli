@@ -1,4 +1,4 @@
-FROM circleci/ruby:2.5.5
+FROM circleci/ruby:2.5.8
 
 RUN sudo apt-get update --allow-releaseinfo-change && sudo apt-get install -y \
   ca-certificates \
@@ -9,7 +9,7 @@ RUN sudo apt-get update --allow-releaseinfo-change && sudo apt-get install -y \
   unzip \
   curl \
   less \
-  nodejs \
+  libmariadbclient-dev
   --no-install-recommends \
   && sudo rm -rf /var/lib/apt/lists/*
 
