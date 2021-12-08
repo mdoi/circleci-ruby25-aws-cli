@@ -15,7 +15,7 @@ RUN sudo apt-get update --allow-releaseinfo-change && sudo apt-get install -y \
   --no-install-recommends \
   && sudo rm -rf /var/lib/apt/lists/*
 
-RUN curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+RUN curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 RUN sudo apt-get update && sudo apt-get install -y \
   nodejs \
   --no-install-recommends \
