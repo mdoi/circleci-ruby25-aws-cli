@@ -9,7 +9,7 @@ RUN sudo apt-get update --allow-releaseinfo-change && sudo apt-get install -y \
   unzip \
   curl \
   less \
-  libmariadbclient-dev
+  libmariadbclient-dev \
   --no-install-recommends \
   && sudo rm -rf /var/lib/apt/lists/*
 
