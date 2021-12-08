@@ -10,6 +10,8 @@ RUN sudo apt-get update --allow-releaseinfo-change && sudo apt-get install -y \
   curl \
   less \
   libmariadbclient-dev \
+  libmagickcore-dev \
+  libmagickwand-dev \
   --no-install-recommends \
   && sudo rm -rf /var/lib/apt/lists/*
 
