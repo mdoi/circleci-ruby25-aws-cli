@@ -1,4 +1,4 @@
-FROM circleci/ruby:2.5.8
+FROM cimg/ruby:2.5.8
 
 RUN sudo apt-get update --allow-releaseinfo-change && sudo apt-get install -y \
   ca-certificates \
