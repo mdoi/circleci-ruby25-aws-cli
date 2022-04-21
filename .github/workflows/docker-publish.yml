@@ -13,10 +13,14 @@ jobs:
 
     container:
       image: ruby:3.0.1
+      options: --user 1001
 
     steps:
       - uses: actions/checkout@v2
 
       - name: Build image
         run: sudo chown -R runner /home/runner
+
+      - name: hoge
+        run: whoami
 
