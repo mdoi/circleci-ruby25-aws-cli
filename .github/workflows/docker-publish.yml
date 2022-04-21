@@ -26,7 +26,9 @@ jobs:
       - uses: actions/cache@v3
         with:
           path: vendor/bundle
-          key: bundle-${{ hashFiles('**/Gemfile.lock') }}
+          key: ${{ runner.os }}-gem-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gem-
 
       - run: gem install bundler
 
