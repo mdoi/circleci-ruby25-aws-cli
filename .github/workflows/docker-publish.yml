@@ -13,20 +13,21 @@ jobs:
 
     container:
       image: ruby:3.0.1
-      options: --user 1001
 
     steps:
       - uses: actions/checkout@v2
 
+      - uses: actions/cache@v3
+        with:
+          path: fuga
+          key: fuga
+
       - name: Build image
-        run: touch hoge
+        run: mkdir fuga && touch fuga/hoge
 
       - name: aa
         run: pwd
 
       - name: bb
         run: ls -la
-
-      - name: hoge
-        run: whoami
 
