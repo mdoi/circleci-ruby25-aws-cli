@@ -30,5 +30,7 @@ jobs:
           path: vendor/bundle
           key: bundle-${{ hashFiles('**/Gemfile.lock') }}
 
+      - run: ls -la 
+
       - run: bundle check || bundle install
 
