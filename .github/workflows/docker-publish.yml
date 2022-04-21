@@ -19,7 +19,13 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Build image
-        run: sudo chown -R runner /home/runner
+        run: touch hoge
+
+      - name: aa
+        run: pwd
+
+      - name: bb
+        run: ls -la
 
       - name: hoge
         run: whoami
