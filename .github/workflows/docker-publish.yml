@@ -11,6 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event_name == 'push'
 
+    container:
+      image: ruby:3.0.1
+
     steps:
       - uses: actions/checkout@v2
 
