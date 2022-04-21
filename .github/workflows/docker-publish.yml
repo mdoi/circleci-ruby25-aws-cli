@@ -23,7 +23,7 @@ jobs:
           key: fuga
 
       - name: Build image
-        run: mkdir fuga && touch fuga/hoge
+        run: mkdir -p fuga && touch fuga/hoge
 
       - name: aa
         run: pwd
